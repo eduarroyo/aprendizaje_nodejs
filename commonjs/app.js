@@ -9,7 +9,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Uso de require: importar un script.
+// Uso de require: importar un módulo desde un fichero mediante una ruta relativa.
 var biblioteca = require("./biblioteca.js");
 
 // El módulo biblioteca exporta las funciones "sumar" y "restar".
