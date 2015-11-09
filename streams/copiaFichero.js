@@ -14,13 +14,13 @@ if (rutasValidas.ok) {
     console.log(rutasValidas.mensaje);
 }
 
-////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 // Comprueba la validez de las rutas de origen y destino:
 //    · Que se hayan especificado
 //    · Que no sean iguales
 //    · Que existe el fichero de origen y se puede leer
 //    · Que no existe el fichero de destino y se puede escribir
-////////////////////////////////////////////////////////////////////////////////
+//
 function validarRutas(origen, destino) {
     'use strict';
     var resultado = {};
