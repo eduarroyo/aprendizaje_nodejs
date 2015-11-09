@@ -10,17 +10,15 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Uso de require: importar un módulo desde un fichero mediante una ruta relativa.
-var biblioteca = require("./biblioteca.js");
+// Existe la convención de no utilizar la extensión en la ruta de importación.
+var biblioteca = require("./biblioteca");
 
 // El módulo biblioteca exporta las funciones "sumar" y "restar".
-console.log("Funcion sumar: ");
-console.log(biblioteca.sumar);
+console.log("Funcion sumar: ", biblioteca.sumar);
 console.log("biblioteca.sumar(2,3) = ", biblioteca.sumar(2,3));
-console.log("Funcion restar: ");
-console.log(biblioteca.restar);
+console.log("Funcion restar: ", biblioteca.restar);
 console.log("biblioteca.restar(3, 1) = ", biblioteca.restar(3,1));
 
 // La función "noExportada" se define en el módulo biblioteca pero no se exporta, por eso su valor
 // aquí es undefined.
-console.log("Funcion noExportada: ");
-console.log(biblioteca.noExportada);
+console.log("Funcion noExportada: "), biblioteca.noExportada);
